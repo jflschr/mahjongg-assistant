@@ -38,7 +38,7 @@ function getTileContent(code: TileCode, size: 'sm' | 'md' | 'lg'): { content: Re
               <div className="flex flex-col items-center leading-none">
                 <span className={clsx(charSize, 'text-gray-900 font-bold')}>{CRAK_CHARS[val.rank]}</span>
                 <span className={clsx(wanSize, 'text-red-600 font-bold -mt-0.5')}>萬</span>
-                <span className={clsx(numSize, 'text-gray-400 font-bold')}>{val.rank}</span>
+                <span className={clsx(numSize, 'text-gray-900 font-bold')}>{val.rank}</span>
               </div>
             ),
             border: 'border-emerald-700/30',
@@ -50,7 +50,7 @@ function getTileContent(code: TileCode, size: 'sm' | 'md' | 'lg'): { content: Re
             content: (
               <div className="flex flex-col items-center leading-none">
                 <DotPattern count={val.rank} size={size} />
-                <span className={clsx(numSize, 'text-gray-400 font-bold')}>{val.rank}</span>
+                <span className={clsx(numSize, 'text-gray-900 font-bold')}>{val.rank}</span>
               </div>
             ),
             border: 'border-emerald-700/30',
@@ -62,7 +62,7 @@ function getTileContent(code: TileCode, size: 'sm' | 'md' | 'lg'): { content: Re
             content: (
               <div className="flex flex-col items-center leading-none">
                 <BamPattern count={val.rank} size={size} />
-                <span className={clsx(numSize, 'text-gray-400 font-bold')}>{val.rank}</span>
+                <span className={clsx(numSize, 'text-gray-900 font-bold')}>{val.rank}</span>
               </div>
             ),
             border: 'border-emerald-700/30',
@@ -79,7 +79,7 @@ function getTileContent(code: TileCode, size: 'sm' | 'md' | 'lg'): { content: Re
         content: (
           <div className="flex flex-col items-center leading-none">
             <span className={clsx(charSize, 'text-gray-900 font-bold')}>{WIND_CHARS[val.wind]}</span>
-            <span className={clsx(labelSize, 'text-gray-400 font-bold')}>{labels[val.wind]}</span>
+            <span className={clsx(labelSize, 'text-gray-900 font-bold')}>{labels[val.wind]}</span>
           </div>
         ),
         border: 'border-emerald-700/30',
