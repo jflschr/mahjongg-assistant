@@ -1,5 +1,5 @@
 import type { Suit, TileCode } from '../types/tile';
-import type { HandPattern, HandCategory, PatternTile, SuitVariable, TileGroup } from '../types/hand';
+import type { HandPattern, HandCategory, PatternTile, SuitVariable } from '../types/hand';
 import type { HandProgress, TileMatch } from '../types/matching';
 import { buildFrequencyMap, SUIT_CHAR, WIND_CHAR } from './tileUtils';
 import { canUseJokerInGroup, handPermitsJokers } from './jokerRules';

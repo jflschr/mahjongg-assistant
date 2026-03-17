@@ -16,7 +16,6 @@ function patternTileToCode(pt: PatternTile, assignment: Partial<Record<SuitVaria
       const suit = assignment[pt.suitVar];
       if (!suit) {
         // Show placeholder based on suit variable
-        const varColors: Record<SuitVariable, string> = { X: '1c', Y: '1d', Z: '1b' };
         const suitChar = { X: 'c', Y: 'd', Z: 'b' }[pt.suitVar];
         return `${pt.rank}${suitChar}`;
       }

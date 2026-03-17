@@ -1,7 +1,7 @@
 import { useState, useMemo, type ReactNode } from 'react';
 import { RULES } from '../../data/rules';
 import { Search, ChevronDown, ChevronRight } from 'lucide-react';
-import clsx from 'clsx';
+
 
 function renderContent(text: string): ReactNode[] {
   return text.split('\n').map((line, li) => {
